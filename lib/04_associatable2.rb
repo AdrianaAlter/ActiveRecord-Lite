@@ -23,7 +23,6 @@ module Associatable
             #{through_options.table_name}.#{through_options.primary_key} = #{self.send(through_options.foreign_key)}
         SQL
 
-      #debugger
     source_options.model_class.parse_all(DBConnection.execute(query)).first
 
   end

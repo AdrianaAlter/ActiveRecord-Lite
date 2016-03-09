@@ -17,16 +17,3 @@ class AttrAccessorObject
   end
 
 end
-
-
-# class MyAttrAccessorObject < AttrAccessorObject
-#   attr_accessor :x, :y
-#
-#   def x
-#     @x
-#   end
-#
-#   def x=(new_val)
-#     @x = new_val
-#   end
-# end

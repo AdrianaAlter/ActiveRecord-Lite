@@ -39,7 +39,7 @@ class HasManyOptions < AssocOptions
 end
 
 module Associatable
-  # Phase IIIb
+
   def belongs_to(name, options = {})
 
     options = BelongsToOptions.new(name, options)
@@ -67,13 +67,9 @@ module Associatable
 
   def assoc_options
     @assoc_options ||= {}
-
-    # Wait to implement this in Phase IVa. Modify `belongs_to`, too.
   end
 end
 
 class SQLObject
-
   extend Associatable
-  # Mixin Associatable here...
 end
